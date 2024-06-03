@@ -1,0 +1,8 @@
+/build
+/coverage
+/dist
+/node_modules
+/tmp
+webpack.config.js
+webpack.config.prod.js
+*.tgz

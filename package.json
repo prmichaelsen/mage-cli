@@ -1,0 +1,39 @@
+{
+  "name": "@prmichaelsen/mage",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": "./bin/mage",
+  "homepage": "https://github.com/prmichaelsen/mage-cli",
+  "description": "CLI chatbot.",
+  "keywords": [
+    "AI",
+    "CLI",
+    "terminal",
+    "chatbot"
+  ],
+  "scripts": {
+    "build-prod": "./esbuild.prod.ts",
+    "build": "./esbuild.build.ts",
+    "watch": "./esbuild.watch.ts",
+    "test": "jest",
+    "prettier": "prettier --write .",
+    "prepack": "npm run build-prod",
+    "prepublishOnly": "npm run test"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/yargs": "^17.0.32",
+    "esbuild": "^0.21.4",
+    "esbuild-plugin-clean": "^1.0.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1607.0",
+    "yargs": "^17.7.2"
+  }
+}

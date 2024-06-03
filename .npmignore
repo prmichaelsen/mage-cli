@@ -1,0 +1,14 @@
+.github
+.notes
+.prettier
+.prettier*
+.vscode
+/coverage
+/node_modules
+/src
+README.md
+jest.config.js
+tsconfig.json
+tslint.json
+esbuild.*
+*.tgz 
